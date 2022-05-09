@@ -1,7 +1,7 @@
 name: awscli image build and push
 on:
   schedule:
-    - cron: '0 0 0 * *'  # Everyweek SUN JST 9:00
+    - cron: '0 0 * * 0'  # At SUN JST 9:00
   workflow_dispatch: {}
   push:
     tags-ignore:
